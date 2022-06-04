@@ -13,6 +13,12 @@
 		D50A2C12284BADFA004AAEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50A2C11284BADFA004AAEF6 /* Assets.xcassets */; };
 		D50A2C15284BADFA004AAEF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50A2C14284BADFA004AAEF6 /* Preview Assets.xcassets */; };
 		D50A2C18284BADFA004AAEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50A2C16284BADFA004AAEF6 /* LaunchScreen.storyboard */; };
+		D50A2C21284BD8E7004AAEF6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C20284BD8E7004AAEF6 /* Person.swift */; };
+		D50A2C26284BD927004AAEF6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C25284BD927004AAEF6 /* DataManager.swift */; };
+		D50A2C2D284BD9AB004AAEF6 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C2C284BD9AB004AAEF6 /* ContactList.swift */; };
+		D50A2C31284BD9BD004AAEF6 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C30284BD9BD004AAEF6 /* ContactDetails.swift */; };
+		D50A2C34284BD9E3004AAEF6 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C33284BD9E3004AAEF6 /* SectionsView.swift */; };
+		D50A2C38284BDA51004AAEF6 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A2C37284BDA51004AAEF6 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		D50A2C14284BADFA004AAEF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D50A2C17284BADFA004AAEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50A2C19284BADFA004AAEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D50A2C20284BD8E7004AAEF6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D50A2C25284BD927004AAEF6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D50A2C2C284BD9AB004AAEF6 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		D50A2C30284BD9BD004AAEF6 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		D50A2C33284BD9E3004AAEF6 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
+		D50A2C37284BDA51004AAEF6 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,14 @@
 		D50A2C0A284BADF7004AAEF6 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				D50A2C0B284BADF7004AAEF6 /* AppDelegate.swift */,
-				D50A2C0D284BADF7004AAEF6 /* SceneDelegate.swift */,
-				D50A2C0F284BADF7004AAEF6 /* ContentView.swift */,
+				D50A2C2A284BD948004AAEF6 /* Views */,
+				D50A2C29284BD936004AAEF6 /* Managers */,
+				D50A2C24284BD8FC004AAEF6 /* Models */,
 				D50A2C11284BADFA004AAEF6 /* Assets.xcassets */,
 				D50A2C16284BADFA004AAEF6 /* LaunchScreen.storyboard */,
 				D50A2C19284BADFA004AAEF6 /* Info.plist */,
+				D50A2C0B284BADF7004AAEF6 /* AppDelegate.swift */,
+				D50A2C0D284BADF7004AAEF6 /* SceneDelegate.swift */,
 				D50A2C13284BADFA004AAEF6 /* Preview Content */,
 			);
 			path = ContactList;
@@ -73,6 +87,34 @@
 				D50A2C14284BADFA004AAEF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D50A2C24284BD8FC004AAEF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D50A2C20284BD8E7004AAEF6 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D50A2C29284BD936004AAEF6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D50A2C25284BD927004AAEF6 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D50A2C2A284BD948004AAEF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D50A2C0F284BADF7004AAEF6 /* ContentView.swift */,
+				D50A2C2C284BD9AB004AAEF6 /* ContactList.swift */,
+				D50A2C30284BD9BD004AAEF6 /* ContactDetails.swift */,
+				D50A2C33284BD9E3004AAEF6 /* SectionsView.swift */,
+				D50A2C37284BDA51004AAEF6 /* RowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50A2C2D284BD9AB004AAEF6 /* ContactList.swift in Sources */,
 				D50A2C0C284BADF7004AAEF6 /* AppDelegate.swift in Sources */,
+				D50A2C26284BD927004AAEF6 /* DataManager.swift in Sources */,
 				D50A2C0E284BADF7004AAEF6 /* SceneDelegate.swift in Sources */,
+				D50A2C38284BDA51004AAEF6 /* RowView.swift in Sources */,
+				D50A2C34284BD9E3004AAEF6 /* SectionsView.swift in Sources */,
+				D50A2C31284BD9BD004AAEF6 /* ContactDetails.swift in Sources */,
+				D50A2C21284BD8E7004AAEF6 /* Person.swift in Sources */,
 				D50A2C10284BADF7004AAEF6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +338,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = belka.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,6 +359,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = belka.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
